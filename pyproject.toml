@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "text-to-speech-api"
+version = "0.1.0"
+description = "To fulfill the user's need for a text-to-speech conversion service, we will build an endpoint using the specified tech stack, which includes Python, FastAPI, PostgreSQL, and Prisma. The primary feature of this endpoint will be to accept plain text as input and convert it into natural-sounding speech audio. Based on the user's preferences and the search for the best Python package for text-to-speech conversion, we will utilize the gTTS (Google Text-to-Speech) library. This library is well-regarded for its ability to convert text into natural-sounding speech using Google's text-to-speech API. It supports multiple languages and accents, which aligns well with the user's requirement to cater to a global audience. Additionally, the gTTS library offers functionality that can be leveraged to tune the voice's pitch and speed, enhancing clarity and achieving a more natural sound, as requested. The generated speech audio will then be returned as an audio file to the endpoint caller. This solution aims to provide an efficient and user-friendly audio conversion service that meets the specified needs for voice customization and international support."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "*"
+gtts = "^2.2.3"
+prisma = "*"
+pydantic = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
